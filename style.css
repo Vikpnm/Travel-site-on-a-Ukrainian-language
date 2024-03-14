@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap");
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border;
+    font-family:'Poppins',sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+.green-stripe {
+    width: 100%;
+    height: 50px;
+    background-color: green;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+}
+/* Home page */
+.green-button {
+    position: fixed;
+    width: 100px;
+    height: 30px;
+    right: 40px;
+    top: 10px;
+    z-index: auto;
+    background-color: red;
+    border: none;
+    outline: none;
+    cursor: wait;
+}
+
+.banner{
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.startscrn{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(1, 0, 5, 0.3),rgba(4, 1, 17, 0.3));
+}
+
+
+  body {/*тхт на меин странице анимация которая*/
+    background-color: #000;/*я не понимаю почему работает черный фон*/
+  }
+  .ag-animate-text-block {
+    margin: 50px 0;
+  }
+  .ag-toggle_title {
+    line-height: 1.2;
+    margin: 0 0 50px;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: #FFF;
+  }
+  .ag-toggle_tagline {
+    margin: 0 0 20px;
+
+    text-align: center;
+    font-size: 20px;
+    color: #FFF;
+  }
+  .cd-words-wrapper {
+    color: #e5e128;
+  }
+
+
+.cd-headline {
+    margin-top: 400px;
+}
+
+.title{ /* редакт класса титл на меин странице*/
+    text-decoration: none;
+    font-size: 4vh;
+    color: rgb(255, 255, 255);
+    padding: 14px 17px;
+    margin-top: 26vh;
+    text-align: center;
+    vertical-align: center;
+}
+
+.title h1{/* редакт класса титл на меин странице*/
+    font-size: 10vh;
+    text-shadow: 2px black;
+    transition: ease 0.3s;
+    margin-top: -300px;
+}
+
+.title h1:hover{/* редакт класса титл на меин странице когда нводишься*/ /* это кстати мой код потому что Виктор  best developer */
+    color:transparent;
+    -webkit-text-stroke: 1px white;
+}
+
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  filter: blur(1px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+
+}
+
+.swiper-slide-active {
+  filter: blur(0px);
+
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-slide span {
+  text-transform: uppercase;
+  color: #fff;
+  background: #1b7402;
+  padding: 7px 18px 7px 25px;
+  display: inline-block;
+  border-radius: 0 20px 20px 0px;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+
+}
+
+.one-pic span {
+  background: #62667f;
+}
+
+.cyprus-two span {
+  background: #087ac4;
+}
+
+.shc-three span {
+  background: #b45205;
+}
+
+.finland-four span {
+  background: #7CFC00;
+}
+
+.swiper-slide h2 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  padding: 25px 45px 0 25px;
+
+}
+
+.swiper-slide p { /*позиция локации*/
+  color: #7CFC00;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  padding: 0 25px 35px 25px;
+}
+
+.swiper-slide svg {/*значок местонахождения*/ /*все коментарии я писал,сайт тоже*/
+  color: #7CFC00;
+  width: 22px;
+  height: 22px;
+  margin-right: 7px;
+}
+
+/* картинки */
+.one-pic {/*карпаты картинка 1*/
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+  url("https://24tv.ua/resources/photos/news/201812/1086698.jpg?v=1661276138000&w=1200&h=675")
+      no-repeat 50% 50% / cover;
+}
+
+
+
+.cyprus-two { /*кипр картинка 2*/
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://joinup.ua/media/2022/02/1Cap-St-Georges-Hotel-and-Resort-2.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.shc-three {/*Швейцария картинка 3*/
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://planetofhotels.com/guide/sites/default/files/styles/paragraph__live_banner__lb_image__1880bp/public/live_banner/%20Zermatt.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.finland-four {/*финляндия картинка 4*/
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://s0.tchkcdn.com/g-wg0xuFRZ1kZOpsX6SrAR7A/17/255964/660x480/f/0/05f_depositphotos_54897871_l_2015.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.new-five {/*нова зеландія картинка 5*/
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("https://backiee.com/static/wpdb/wallpapers/1920x1080/301429.jpg")
+      no-repeat 50% 50% / cover;
+}
+/*конец картинок на меин екране*/
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+.ag-format-container {
+    width: 1142px;
+    margin: 0 auto;
+  }
+
+
+.modal {/*політика к.*/
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px; /* Уменьшим отступы внутри окна */
+    width:  500px; /* Зададим ширину окна */
+    height: 300px; /* Зададим высоту окна */
+    border-radius: 12px;
+    margin: 15px auto;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.runaway-button-container,
+button {
+    margin-right: 20px;
+}
+
+#privacyCheckbox {
+    margin-top: 100px;
+}
+
+.text-container {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+
+.runaway-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 0, 0);
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+    transition: left 0.3s, top 0.3s;
+    left: 100px;
+    top: 200px;
+}
+
+
+
+.iwant12 {
+    position: absolute;
+    right: 40px;
+    top: 176px;
+    background-color: rgb(0, 255, 0);
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.5s;
+}
+
+.iwant12:hover {/*увеличиваеться кнопка продолжить политика к.*/
+    transform: scale(1.2);
+}
+
+
+
